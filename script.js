@@ -21,7 +21,7 @@ async function callApi() {
 	const data = resp.data.results[0];
 	resp.onload = () => {
 		loadingCard.display.style = "";
-		imgPerson.src = resp.data.picture;
+		imgPerson.src = resp.data.picture.large;
 		pName.innerText = resp.data.name;
 		pEmail.innerText = resp.data.email;
 		pAddress.innerText = resp.data.a;
